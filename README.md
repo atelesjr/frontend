@@ -16,6 +16,8 @@ Recrie o feed do Instagram web (sem páginas externas, só o feed principal), in
 
 Referência: https://instagram.com
 
+**Prazo máximo de 3 dias.**
+
 ## O que será avaliado
 - Clean code
 - Componentização
