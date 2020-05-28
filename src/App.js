@@ -22,7 +22,7 @@ function App() {
 
   return (
     <Container>
-      <h1>Template</h1>
+      <h1>Air Liquid</h1>
 
       { 
         posts 

@@ -24,12 +24,16 @@ export const UserCard = styled.div`
 
             i {
                 font-size:4rem;
-                background-color: red;
+                background-color: ${color.light};;
                 border-radius: 5rem;
-                border: 1px solid ${color.light};
-                color: ${color.dark};
+                color: ${color.gray_300};
                 margin-right: 1.5rem;
             }
+        }
+
+        .timestamp{
+            color: ${ color.gray_300 };
+            font-size: 1.2rem;
         }
     }
 
@@ -47,14 +51,17 @@ export const UserCard = styled.div`
         padding: 1.2rem;
 
         .name{
+            font-size: 1.5rem;
             font-weight: 600;
         }
 
         .place{
+            color: ${ color.gray_300 };
             font-size: 1.1rem;
         }
 
         .bio{
+            color: ${ color.gray_400 };
             margin-top: 1rem;
         }
     }

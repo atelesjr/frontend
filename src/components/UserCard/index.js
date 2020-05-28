@@ -11,7 +11,6 @@ const UserCard = ({ post }) => {
                        {post.username}
                     </div>
                 </div>
-                
                 <div className="timestamp">
                     { post.timestamp }
                 '</div>
