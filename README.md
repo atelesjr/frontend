@@ -1,5 +1,5 @@
 # Air Liquide Brasil - Teste Front-End
-To start this project: yarn start
+To start this project: **yarn start**
 
 ## Instruções
 - To install this project: **'yarn'** or **'npm i'**
