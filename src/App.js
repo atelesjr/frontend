@@ -9,12 +9,12 @@ import Container from 'components/generics/Container'
 import Spinner from 'components/generics/Spinner'
 import UserCard from 'components/UserCard'
 
-
-function App() {
+function App({posts:fakeData}) {
 
   //Redux
   const dispatch = useDispatch();
-  const { posts } = useSelector( state => state.posts );
+  const { posts } = useSelector( state => state.posts);
+  const data = posts || fakeData // development or test enviroment.
 
   useEffect(() => {
     dispatch(getPosts())
@@ -22,16 +22,14 @@ function App() {
 
   return (
     <Container>
-      <h1>Air Liquid</h1>
-
+      <h1>Air Liquide</h1>
       { 
-        posts 
-        ? posts.map( (post, i) =>
+        data 
+        ? data.map( (post, i) =>
           <UserCard post={ post } key={i}/>
         )
         : <Spinner size={'3rem'} />
       }
-      
     </Container>
   );
 }

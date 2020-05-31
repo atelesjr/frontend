@@ -3,10 +3,10 @@ import * as S from './styles';
 
 const UserCard = ({ post }) => {
     return(
-        <S.UserCard>
+        <S.UserCard data-test="UserCardComp">
             <div className="head"> 
                 <div className="userInfo">
-                    <i class="fas fa-user-circle" />
+                    <i className="fas fa-user-circle" />
                     <div className="username">
                        {post.username}
                     </div>
@@ -16,7 +16,7 @@ const UserCard = ({ post }) => {
                 '</div>
             </div>
             <div className="picture">
-                <img src={post.picture } alt={ post.username } />
+                <img src={post.picture } alt={ post.username } data-test="userImage"/>
             </div>
             <div className="description">
                 <div className="name">
@@ -30,7 +30,7 @@ const UserCard = ({ post }) => {
                 </div>
             </div>
         </S.UserCard>
-    )
-}
+    );
+};
 
 export default UserCard;
