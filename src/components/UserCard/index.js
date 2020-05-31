@@ -20,7 +20,11 @@ const UserCard = ({ post }) => {
             </div>
             <div className="description">
                 <div className="name">
-                    { `${ post.first_name } ${ post.last_name }` } 
+                    { `${ post.first_name } ${ post.last_name }` } {
+                        post.avatar === 'Male' 
+                        ? <i className="fas fa-mars male"  />
+                        : <i className="fas fa-venus female" />
+                    } 
                 </div>
                 <div className="place">
                     { `${post.city}, ${post.country}`}

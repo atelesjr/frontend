@@ -53,6 +53,21 @@ export const UserCard = styled.div`
         .name{
             font-size: 1.5rem;
             font-weight: 600;
+            color: ${color.gray_500};
+
+            i {
+                font-size: 1.5rem;
+                margin-right: 1.5rem;
+
+                &.male{
+                    color: ${color.blue};
+                }
+
+                &.female{
+                    color: ${color.pink};
+                }
+            }
+            }
         }
 
         .place{

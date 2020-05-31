@@ -8,6 +8,8 @@ export const color = {
     gray_500: '#606164',
     gray_600: '#454547',
     dark: '#231F20',
+    pink: '#ba3ebc',
+    blue: '#004f94'
 
 
 }
