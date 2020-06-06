@@ -1,5 +1,5 @@
 # Air Liquide Brasil - Front-End terst
-A simple application listing posts consuming API data and TDD ( React, Redux-Saga, Jest and Enzyme )
+A application listing posts consuming API data and TDD ( React, Redux-Saga, Jest and Enzyme )
 
 ## Instructions
 - To install this project: **'yarn'** or **'npm i'**
